@@ -1,7 +1,7 @@
 
 var snappy = {
-        uncompress: require('./uncompress')
-      , uncompressedLength: require('./uncompressed-length')
+        uncompress: require('./lib/uncompress')
+      , uncompressedLength: require('./lib/uncompressed-length')
     }
 
 module.exports = snappy
