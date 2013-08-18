@@ -10,8 +10,10 @@ var fs = require('fs')
   , random  = fs.readFileSync(__dirname + '/fixtures/random-compressed.bin')
   , medium  = fs.readFileSync(__dirname + '/fixtures/medium-compressed.bin')
   , large   = fs.readFileSync(__dirname + '/fixtures/large-compressed.bin')
+  , urls    = fs.readFileSync(__dirname + '/fixtures/urls.10K-compressed.bin')
 
   , randomRaw = fs.readFileSync(__dirname + '/fixtures/random-raw.bin')
+  , urlsRaw   = fs.readFileSync(__dirname + '/fixtures/urls.10K-raw.txt')
 
 test('uncompress small', function(t) {
   var m = uncompress(small)
@@ -36,6 +38,15 @@ test('uncompress random', function(t) {
 
   t.equal(m.length, 1024, 'should have correct length')
   t.deepEqual(m.toString('hex'), randomRaw.toString('hex'), 'should have correct data')
+  t.end()
+})
+
+test('uncompress urls', function(t) {
+  var m = uncompress(urls)
+
+  t.equal(m.length, urlsRaw.length, 'should have correct length')
+
+  t.deepEqual(m.toString().slice(0, 600), urlsRaw.toString().slice(0, 600), 'should have correct data')
   t.end()
 })
 
