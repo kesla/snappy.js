@@ -17,7 +17,7 @@ test('uncompressedLength', function(t) {
   // alphabet 20 times
   t.equal(uncompressedLength(medium), 520, 'correct medium length')
 
-  // alphabet 2000 times
+  // alphabet 10,000 times
   t.equal(uncompressedLength(large), 260000, 'correct large length')
 
   t.end()

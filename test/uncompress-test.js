@@ -29,9 +29,9 @@ test('uncompress medium', function(t) {
 
 test('uncompress large', function(t) {
   var m = uncompress(large)
-  var data = Array(2001).join('abcdefghijklmnopqrstuvwxyz')
+  var data = Array(10001).join('abcdefghijklmnopqrstuvwxyz')
 
-  t.equal(m.length, 52000, 'should have correct length')
+  t.equal(m.length, 260000, 'should have correct length')
   t.equal(m.toString(), data, 'should have correct data')
   t.end()
 })
