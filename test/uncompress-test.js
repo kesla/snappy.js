@@ -11,18 +11,28 @@ var fs = require('fs')
 
 test('uncompress small', function(t) {
   var m = uncompress(small)
-  t.equal(m.length, 3, 'should have correct length')
+  var data = 'foo'
+
+  t.equal(m.length, data.length, 'should have correct length')
+  t.equal(m.toString(), 'foo', 'should have correct data')
   t.end()
 })
+return
 
 test('uncompress medium', function(t) {
   var m = uncompress(medium)
-  t.equal(m.length, 520, 'should have correct length')
+  var data = Array(21).join('abcdefghijklmnopqrstuvwxyz')
+
+  t.equal(m.length, data.length, 'should have correct length')
+  // t.equal(m.toString(), data, 'should have correct data')
   t.end()
 })
 
 test('uncompress large', function(t) {
   var m = uncompress(large)
+  var data = Array(2001).join('abcdefghijklmnopqrstuvwxyz')
+
   t.equal(m.length, 52000, 'should have correct length')
+  // t.equal(m.toString(), data, 'should have correct data')
   t.end()
 })
