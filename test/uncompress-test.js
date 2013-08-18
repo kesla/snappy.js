@@ -26,13 +26,12 @@ test('uncompress medium', function(t) {
   t.equal(m.toString(), data, 'should have correct data')
   t.end()
 })
-return
 
 test('uncompress large', function(t) {
   var m = uncompress(large)
   var data = Array(2001).join('abcdefghijklmnopqrstuvwxyz')
 
   t.equal(m.length, 52000, 'should have correct length')
-  // t.equal(m.toString(), data, 'should have correct data')
+  t.equal(m.toString(), data, 'should have correct data')
   t.end()
 })
