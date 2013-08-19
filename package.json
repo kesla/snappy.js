@@ -1,0 +1,20 @@
+{
+  "name": "snappy.js",
+  "author": "David Björklund <david.bjorklund@gmail.com> (http://davidbjorklund.se)",
+  "description": "A implementation of the snappy-algorithm",
+  "version": "0.0.0",
+  "repository": {
+    "url": "git://github.com/kesla/snappy.js.git"
+  },
+  "main": "snappy.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "devDependencies": {
+    "tape": "~1.0.4"
+  },
+  "licence": "MIT",
+  "keywords": [
+    "compression", "snappy"
+  ]
+}

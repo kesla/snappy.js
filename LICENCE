@@ -1,29 +1,3 @@
-# snappy.js
-
-A implementation of the snappy-algorithm
-
-## Installation
-
-```
-npm install snappy.js
-```
-
-## Stability
-
-__unstable__: APIs may change, right now _only_ snappy.uncompress is implemented.
-
-## Example
-
-```javascript
-var snappy = require('snappy.js')
-  // compressed is a snappy-compressed buffer
-  , raw = snappy.uncompress(compressed)
-
-console.log('original data:' + raw.toString())
-```
-
-## Licence
-
 Copyright (c) 2013 David Björklund
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
