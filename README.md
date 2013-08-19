@@ -12,6 +12,17 @@ npm install snappy.js
 
 __unstable__: APIs may change, right now _only_ snappy.uncompress is implemented.
 
+## Performance
+
+There's a simple benchmark in test/benchmarks/bench.js that compares uncompressing in snappy.js and snappy. Here's the results running on my machine:
+
+```
+snappy: 12ms
+snappy.js: 211ms
+```
+
+I hope to squize out some more performance out of snappy.js, but I doubt that it will every get as quick as snappy.
+
 ## Example
 
 ```javascript
