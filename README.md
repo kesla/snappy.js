@@ -33,6 +33,12 @@ var snappy = require('snappy.js')
 console.log('original data:' + raw.toString())
 ```
 
+## API
+
+*  __uncompress__(compressed) is a synchronous function, taking the input (a Buffer) and returns the output (as a buffer) decompressed.
+
+* __uncompressedLength__(compressed) is a synchronous function, taking the input (a Buffer) and returns the size of the decompressed data.
+
 ## Licence
 
 Copyright (c) 2013 David Björklund
