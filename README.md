@@ -39,6 +39,8 @@ console.log('original data:' + raw.toString())
 
 * __uncompressedLength__(compressed) is a synchronous function, taking the input (a Buffer) and returns the size of the decompressed data.
 
+* __isValidCompressed__(compressed) is a synchronous function, taking the input (a Buffer) and returns _true_ if it's valid compressed data and _false_ otherwise.
+
 ## Licence
 
 Copyright (c) 2013 David Björklund
