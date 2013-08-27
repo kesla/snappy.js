@@ -46,7 +46,7 @@ test('uncompress urls', function(t) {
 
   t.equal(m.length, urlsRaw.length, 'should have correct length')
 
-  t.deepEqual(m.toString().slice(0, 600), urlsRaw.toString().slice(0, 600), 'should have correct data')
+  t.deepEqual(m.toString(), urlsRaw.toString(), 'should have correct data')
   t.end()
 })
 
