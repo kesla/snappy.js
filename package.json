@@ -17,5 +17,8 @@
   "keywords": [
     "compression",
     "snappy"
-  ]
+  ],
+  "dependencies": {
+    "varint": "^3.0.1"
+  }
 }
