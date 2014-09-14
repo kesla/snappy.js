@@ -2,7 +2,7 @@
   "name": "snappy.js",
   "author": "David Björklund <david.bjorklund@gmail.com> (http://davidbjorklund.com)",
   "description": "A implementation of the snappy-algorithm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "url": "git://github.com/kesla/snappy.js.git"
   },
