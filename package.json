@@ -1,6 +1,6 @@
 {
   "name": "snappy.js",
-  "author": "David Björklund <david.bjorklund@gmail.com> (http://davidbjorklund.se)",
+  "author": "David Björklund <david.bjorklund@gmail.com> (http://davidbjorklund.com)",
   "description": "A implementation of the snappy-algorithm",
   "version": "0.0.2",
   "repository": {
@@ -20,5 +20,13 @@
   ],
   "dependencies": {
     "varint": "^3.0.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/kesla/snappy.js/issues"
+  },
+  "homepage": "https://github.com/kesla/snappy.js",
+  "directories": {
+    "test": "test"
+  },
+  "license": "MIT"
 }
