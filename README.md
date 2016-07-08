@@ -1,3 +1,5 @@
+# DEPRECATED please use https://www.npmjs.com/package/snappyjs instead
+
 # snappy.js[![build status](https://api.travis-ci.org/kesla/snappy.js.svg?branch=master)](http://travis-ci.org/kesla/snappy.js)
 
 A implementation of the snappy-algorithm
